@@ -1,0 +1,16 @@
+<h1>Ussues#list</h1>
+
+
+<p>
+ User:<br />
+<input id = "n1" value = "">
+</p>
+<p>
+ Repo:<br />
+<input id = "n2">
+</p>
+
+Click this link
+<%= link_to "list", issues_list_path({:user => "peter-murach", :repo => "github"}), remote: true %>.<br/>
+<div class='list_div'>
+</div>

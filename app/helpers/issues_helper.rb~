@@ -1,0 +1,7 @@
+require 'github_api'
+module IssuesHelper
+  def list(user_name, repo_name)
+	@issues = Github::Issues.new basic_auth: 'AnnaKotova:v80668027682'
+	@posts =@issues.list :user => user_name , :repo => repo_name
+  end
+end

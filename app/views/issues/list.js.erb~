@@ -1,4 +1,2 @@
 $('.list_div').html(
 "<table><tr><th>Title</th></tr><% @posts.each do |post| %><tr><td><%= post.title %></td></tr><% end %></table>");
-
-<%= @posts  %>

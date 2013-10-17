@@ -10,7 +10,23 @@
 <input id = "n2">
 </p>
 
-Click this link
-<%= link_to "list", issues_list_path({:user_name => "peter-murach", :repo_name => "github"}), remote: true %>.<br/>
-<div class='list_div'>
+ <p id = "t">"Кликать" сюда.</p>
+<%= link_to "list", issues_list_path, remote: true, id = "t" %>.<br/>
+<div class = 'list_div'>
 </div>
+
+ <script>
+ $('#t').click( function(event){
+    name();
+});
+var name = function (){ 
+	$.ajax({
+		type:"GET",	
+		url: "/issues/list?user_name=" + $("#n1").val() + "&repo_name=" + $("#n2").val(),
+		success: function(result){
+		}
+		
+	});
+    
+}
+</script>

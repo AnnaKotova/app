@@ -4,7 +4,7 @@ class IssuesController < ApplicationController
   end
 
   def list
-        issues = Github::Issues.new basic_auth: 'AnnaKotova:v80668027682'
-	@posts =issues.list
+	issues = Github::Issues.new basic_auth: 'AnnaKotova:v80668027682'
+	@posts =issues.list :user => @user_name, :repo => @repo_name
   end
 end

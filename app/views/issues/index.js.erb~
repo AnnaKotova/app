@@ -1,7 +1,6 @@
- $('#po').bind("click", function(){
-    name();
-    });
 
-	var name = function (){ 
-	alert("drf");
-}
+
+
+
+	
+

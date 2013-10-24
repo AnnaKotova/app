@@ -1,0 +1,13 @@
+<table>
+	<tr>
+		<th><%= params[:issue][:user] %></th>
+		<br /><%= params[:issue][:repo] %>
+	</tr>
+<% @posts.each do |post| %>
+	<tr>
+		<td><%= post.title %></td>
+		<td><%= post.body %></td>
+	</tr>
+<% end %>
+</table>
+

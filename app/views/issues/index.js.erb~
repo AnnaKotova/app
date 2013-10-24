@@ -1,4 +1,16 @@
-
+$('#t').click( function(event){
+    name();
+});
+var name = function (){ 
+	$.ajax({
+		type:"GET",	
+		url: "/issues/list?user_name=" + $("#n1").val() + "&repo_name=" + $("#n2").val(),
+		success: function(result){
+		}
+		
+	});
+    
+}
 
 
 

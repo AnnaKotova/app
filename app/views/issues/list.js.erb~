@@ -1,2 +1,5 @@
-$('.list_div').html(
-"<table><tr><th>Title</th></tr><% @posts.each do |post| %><tr><td><%= post.title %></td></tr><% end %></table>");
+$('#list_div').html("<%= j render "table" %>")
+
+$('#foo').on('click', function(){
+  
+});

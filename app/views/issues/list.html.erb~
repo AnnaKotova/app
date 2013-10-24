@@ -1,1 +1,4 @@
-<%= @posts  %>
+<script>
+$('#list_div').html("<%= j render "form" %>");
+  </script>
+

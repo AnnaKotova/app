@@ -1,7 +1,10 @@
 MyApp::Application.routes.draw do
- 
-  get "issues/index"
+ root :to => "issues#index" 
+
   get 'issues/list'
+  post 'issues/list'
+ 
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

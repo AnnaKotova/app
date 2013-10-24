@@ -1,32 +1,14 @@
-<h1>Ussues#list</h1>
-
-
+<h1>Issues#list</h1>
+<%= form_for(@issue, url: {action: "list"},:remote => true) do |f| %>
 <p>
  User:<br />
-<input id = "n1" value = "">
+  <%= f.text_field :user,:size=>"45" %>
 </p>
 <p>
  Repo:<br />
-<input id = "n2">
+  <%= f.text_field :repo,:size=>"45" %>
 </p>
-
- <p id = "t">"Кликать" сюда.</p>
-<%= link_to "list", issues_list_path, remote: true, id = "t" %>.<br/>
-<div class = 'list_div'>
+ <%= f.submit "Show issues list" %>
+<% end %>
+<div id = 'list_div'>
 </div>
-
- <script>
- $('#t').click( function(event){
-    name();
-});
-var name = function (){ 
-	$.ajax({
-		type:"GET",	
-		url: "/issues/list?user_name=" + $("#n1").val() + "&repo_name=" + $("#n2").val(),
-		success: function(result){
-		}
-		
-	});
-    
-}
-</script>

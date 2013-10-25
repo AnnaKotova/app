@@ -1,5 +1,3 @@
-$('#list_div').html("<%= j render "table" %>")
+$('#list_div').html("<%= j render "table" %>");
 
-$('#foo').on('click', function(){
-  
-});
+$('#ref').click($('#body').attr(display: block) );

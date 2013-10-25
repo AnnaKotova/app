@@ -1,14 +1,22 @@
-<table>
-	<tr>
-		<th><%= params[:issue][:user] %>
-		<br /><%= params[:issue][:repo] %></th>
-	</tr>
+<div class="title">
+<%= params[:issue][:user] %>
+<br /><%= params[:issue][:repo] %>
+</div>
+<br />
 <% @posts.each do |post| %>
-	<tr>
-		<td><%= post.title %>
-		<a href=""# id = "foo" >"More</a></td>
-		<td hidden><%= post.body %></td>
-	</tr>
+	
+	
+	<div><%= post.title %></div>
+	<li class = "ref" rel = "<%= post.number %>" >
+ 	More
+	</li><br />
+	<div hidden class = "body" id = "rel_<%= post.number %>" ><%= post.body %></div><br />
 <% end %>
-</table>
 
+<script>
+$('.ref').click(function(){
+	var a = $(this).attr('rel');
+	$('#rel_'+a).attr({hidden: false});
+	
+ });
+</script>

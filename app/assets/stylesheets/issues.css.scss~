@@ -6,7 +6,7 @@
 }
 
 .ref {
-	color: #0000121;
+	color: #000000;
 	font-size: 16px;
 	cursor: pointer;
 	font-family: Times New Roman,Times,serif;

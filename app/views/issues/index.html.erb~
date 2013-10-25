@@ -2,11 +2,11 @@
 <%= form_for(@issue, url: {action: "list"},:remote => true) do |f| %>
 <p>
  User:<br />
-  <%= f.text_field :user,:size=>"45" %>
+  <%= f.text_field :user,:size=>"30" %>
 </p>
 <p>
  Repo:<br />
-  <%= f.text_field :repo,:size=>"45" %>
+  <%= f.text_field :repo,:size=>"30" %>
 </p>
  <%= f.submit "Show issues list" %>
 <% end %>

@@ -1,6 +1,6 @@
 <div class="title">
-<%= user1 %>
-<br /><%= repo1 %>
+<%= @user1 %>
+<br /><%= @repo1 %>
 </div>
 <br />
 <% @posts.each do |post| %>

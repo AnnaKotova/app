@@ -1,6 +1,6 @@
 <div class="title">
-<%= user1 %>
-<br /><%= repo1 %>
+<%= @user1 %>
+<br /><%= @repo1 %>
 </div>
 <br />
 <% @posts.each do |post| %>
@@ -20,7 +20,7 @@ $('.ref').click(function(){
  });
 $('#add').click(function(){
 	$('#new_form').attr({hidden: false});
-	$('#new_form').html("<%= j render "add_form" %>");
+	$('#new_form').html("<%= j render "add_issue_form" %>");
 	
  });
 </script>

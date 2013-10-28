@@ -2,6 +2,9 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
-$('#ref').click(function(){
-	$('#body').attr({hidden: false})
+
+$('.ref').click(function(){
+	var a = $(this).attr('rel');
+	$('#rel_'+a).attr({hidden: false});
+	
  });

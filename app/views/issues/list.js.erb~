@@ -1,3 +1,4 @@
 $('#list_div').html("<%= j render "table" %>");
+$('#new_form').attr({hidden: true});
 
-$('#ref').click($('#body').attr(display: block) );
+

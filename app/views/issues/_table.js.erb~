@@ -1,0 +1,6 @@
+$('.ref').click(function(){
+	var a = $(this).attr('rel');
+	$('#rel_'+a).attr({hidden: false});
+	
+ });
+

@@ -14,12 +14,10 @@
 //= require jquery_ujs
 //= require_tree .
 
-$(function() {
-  $('[data-remote][data-replace]')
-    .data('type', 'html')
-    .live('ajax:success', function(event, data) {
-      var $this = $(this);
-      $($this.data('replace')).html(data);
-      $this.trigger('ajax:replaced');
-    });
-});
+
+$('.ref').click(function(){
+	var a = $(this).attr('rel');
+	$('#rel_'+a).attr({hidden: false});
+	
+ });
+

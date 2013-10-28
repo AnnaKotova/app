@@ -3,7 +3,7 @@ MyApp::Application.routes.draw do
 
   get 'issues/list'
   post 'issues/list'
- 
+  post 'issues/add_issue'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

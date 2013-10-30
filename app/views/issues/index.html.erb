@@ -1,14 +1,42 @@
-<h1>Issues#list</h1>
-<%= form_for(@issue, url: {action: "list"},:remote => true) do |f| %>
-<p>
- User:<br />
-  <%= f.text_field :user,:size=>"30" %>
-</p>
-<p>
- Repo:<br />
-  <%= f.text_field :repo,:size=>"30" %>
-</p>
- <%= f.submit "Show issues list" %>
+<h1>Issues list</h1>
+<%= form_for(@issue, url: {action: "list"},:remote => true, :html => {:id => 'enter_data'}) do |f| %>
+    <div id = "error_block" class = "error"></div>
+<br />
+	<%= f.label :user, "Enter user name:" %><br />
+  	<%= f.text_field :user, id: "required_field_name" %>
+	<br /><br />
+	<%= f.label :repo, "Enter repository name:" %><br />
+	<%= f.text_field :repo, id: "required_field_repo" %>
+	<br /><br />
+	<%= f.submit "Show issues list", class: "List_button" %>
 <% end %>
 <div id = 'list_div'>
 </div>
+
+<script>
+
+$(document).ready(function(){
+    $('#enter_data').bind('ajax:error', function(){
+    $("#required_field_name").val('');
+    $("#required_field_repo").val('');
+    $("#list_div").html('');
+    $("#error_block").html("Don`t found");
+  });
+});
+
+$(".List_button").click(function(){
+  var a="";
+  if ($("#required_field_name").val() == false) { 
+    a = "You don`t enter user name";
+  };
+  if ($("#required_field_repo").val() == false) {
+      a = a + "<br />You don`t enter repo name";
+  };
+    $("#error_block").html(a);
+    
+  if (a){
+      return false;
+    }
+  });
+
+</script>

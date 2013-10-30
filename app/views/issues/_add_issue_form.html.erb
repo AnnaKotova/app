@@ -1,8 +1,9 @@
 <%= form_for(@add_issue, url: {action: "list"},:remote => true) do |f| %>
-
+<div id = "error_block1" class = "error"></div>
+<br />
 <p>
  Title:<br />
-  <%= f.text_field :title,:size=>"30" %>
+  <%= f.text_field :title,:size=>"30", id: "title" %>
 </p>
 <p>
  Body:<br />
@@ -10,5 +11,16 @@
   <%= f.hidden_field :user, :value => @user1 %>
   <%= f.hidden_field :repo, :value => @repo1 %>
 </p>
- <%= f.submit "Add" %>
+ <%= f.submit "Add", class: "List_button" %>
 <% end %>
+
+
+<script>
+
+$(".List_button").click(function(){
+   if ($("#title").val() == false) { 
+    $("#error_block1").html("You don`t enter title");
+  };
+});
+
+</script>

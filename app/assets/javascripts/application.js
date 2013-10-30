@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require issues.js.coffee
 //= require_tree .
 
 

@@ -9,8 +9,8 @@
  	Details</li>
 	<div hidden class = "body" id = "rel_<%= post.number %>" ><%= post.body %></div><br />
 <% end %>
-<li id = "add">Add issue</li>
-<div hidden id = "new_form"%>" ></div><br />
+<li id = "add_issue">Add issue</li>
+<div hidden id = "new_form"></div><br />
 
 <script>
 $('.ref').click(function(){
@@ -18,9 +18,8 @@ $('.ref').click(function(){
 	$('#rel_'+a).attr({hidden: false});
 	
  });
-$('#add').click(function(){
+$('#add_issue').click(function(){
 	$('#new_form').attr({hidden: false});
 	$('#new_form').html("<%= j render "add_issue_form" %>");
-	
  });
 </script>

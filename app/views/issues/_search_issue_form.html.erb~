@@ -12,15 +12,4 @@
 <li id = "add">Add issue</li>
 <div hidden id = "new_form"%>" ></div><br />
 
-<script>
-$('.ref').click(function(){
-	var a = $(this).attr('rel');
-	$('#rel_'+a).attr({hidden: false});
-	
- });
-$('#add').click(function(){
-	$('#new_form').attr({hidden: false});
-	$('#new_form').html("<%= j render "add_form" %>");
-	
- });
-</script>
+

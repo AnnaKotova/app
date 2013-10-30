@@ -20,4 +20,9 @@ $('.ref').click(function(){
 	$('#rel_'+a).attr({hidden: false});
 	
  });
+$('#add').click(function(){
+	$('#new_form').attr({hidden: false});
+	$('#new_form').html("<%= j render "add_issue_form" %>");
+	
+ });
 

@@ -1,14 +1,24 @@
-<h1>Issues#list</h1>
-<%= form_for(@issue, url: {action: "list"},:remote => true) do |f| %>
-<p>
- User:<br />
-  <%= f.text_field :user,:size=>"30" %>
-</p>
-<p>
- Repo:<br />
-  <%= f.text_field :repo,:size=>"30" %>
-</p>
- <%= f.submit "Show issues list" %>
+<h1>Issues list</h1>
+<%= form_for(@issue, url: {action: "list"},:remote => true, :html => {:id => 'enter_data'}) do |f| %>
+     <%= render 'shared/error_messages' %>
+
+	<%= f.label :user, "Enter user name:" %><br />
+  	<%= f.text_field :user %>
+	<br /><br />
+	<%= f.label :repo, "Enter repository name:" %><br />
+	<%= f.text_field :repo %>
+	<br /><br />
+	<%= f.submit "Show issues list", class: "List_button" %>
 <% end %>
 <div id = 'list_div'>
 </div>
+
+<script type="text/javascript">
+$(document).ready(function () {
+  $("#enter_data").validate({
+    rules: {
+      "issue[user]": {required: true},
+      "issue[repo]": {required: false, maxlength: 2},
+    }});
+  });
+</script>

@@ -7,14 +7,14 @@ class IssuesController < ApplicationController
 		@add_issue = AddIssue.new
 		issues = Github::Issues.new basic_auth: 'AnnaKotova:v80668027682'
         if params[:add_issue]
-			issues.create :user => params[:add_issue][:user], :repo => params[:add_issue][:repo], :title => params[:add_issue][:title], :body => params[:add_issue][:body] 
+			issues.create :user => params[:add_issue][:user], :repo => params[:add_issue][:repo], :title => params[:add_issue][:title], :body => params[:add_issue][:body], :assignee => params[:add_issue][:assignee], :milestone => params[:add_issue][:milestone] 
 			@user1 = params[:add_issue][:user]
 			@repo1= params[:add_issue][:repo]
 		else
 			@user1 = params[:issue][:user]
 			@repo1= params[:issue][:repo]
 		end
-		@posts =issues.list :user => @user1, :repo => @repo1
+		@posts =issues.list :user => @user1, :repo => @repo1, auto_pagination: true
   end	
  end
 

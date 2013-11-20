@@ -47407,3 +47407,248 @@ Github::Error::NotFound (GET https://api.github.com/repos/peter-murach/app/issue
   Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
   Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
   Rendered /var/lib/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 10:02:21 +0200
+Connecting to database specified by database.yml
+Processing by IssuesController#index as HTML
+  Rendered issues/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 292ms (Views: 199.4ms | ActiveRecord: 18.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 10:02:22 +0200
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/issues.css?body=1" for 127.0.0.1 at 2013-10-31 10:02:22 +0200
+Served asset /issues.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 10:02:22 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 10:02:22 +0200
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/issues.js?body=1" for 127.0.0.1 at 2013-10-31 10:02:22 +0200
+Served asset /issues.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 10:02:22 +0200
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started POST "/issues/list" for 127.0.0.1 at 2013-10-31 10:02:25 +0200
+Processing by IssuesController#list as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I9XaabaCIrs7/KxkgLAto0SzjzSBFS0sFtoiB9Ebbfg=", "issue"=>{"user"=>"peter-murach", "repo"=>"github"}, "commit"=>"Show issues list"}
+  Rendered issues/_add_issue_form.html.erb (2.9ms)
+  Rendered issues/_search_issue_form.html.erb (4.9ms)
+  Rendered issues/list.js.erb (19.5ms)
+Completed 200 OK in 1275ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 10:04:17 +0200
+Processing by IssuesController#index as HTML
+  Rendered issues/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 10ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 10:04:17 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/issues.css?body=1" for 127.0.0.1 at 2013-10-31 10:04:17 +0200
+Served asset /issues.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 10:04:17 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 10:04:17 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 10:04:17 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/issues.js?body=1" for 127.0.0.1 at 2013-10-31 10:04:17 +0200
+Served asset /issues.js - 304 Not Modified (0ms)
+
+
+Started POST "/issues/list" for 127.0.0.1 at 2013-10-31 10:04:20 +0200
+Processing by IssuesController#list as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I9XaabaCIrs7/KxkgLAto0SzjzSBFS0sFtoiB9Ebbfg=", "issue"=>{"user"=>"peter-murach", "repo"=>"github"}, "commit"=>"Show issues list"}
+  Rendered issues/_add_issue_form.html.erb (2.6ms)
+  Rendered issues/_search_issue_form.html.erb (5.2ms)
+  Rendered issues/list.js.erb (7.9ms)
+Completed 200 OK in 828ms (Views: 11.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/issues/list" for 127.0.0.1 at 2013-10-31 10:04:47 +0200
+Processing by IssuesController#list as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I9XaabaCIrs7/KxkgLAto0SzjzSBFS0sFtoiB9Ebbfg=", "issue"=>{"user"=>"peter-murach", "repo"=>"github"}, "commit"=>"Show issues list"}
+  Rendered issues/_add_issue_form.html.erb (1.4ms)
+  Rendered issues/_search_issue_form.html.erb (3.9ms)
+  Rendered issues/list.js.erb (6.5ms)
+Completed 200 OK in 872ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/issues/list" for 127.0.0.1 at 2013-10-31 10:05:15 +0200
+Processing by IssuesController#list as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I9XaabaCIrs7/KxkgLAto0SzjzSBFS0sFtoiB9Ebbfg=", "issue"=>{"user"=>"peter-murach", "repo"=>"github"}, "commit"=>"Show issues list"}
+  Rendered issues/_add_issue_form.html.erb (0.9ms)
+  Rendered issues/_search_issue_form.html.erb (2.8ms)
+  Rendered issues/list.js.erb (5.2ms)
+Completed 200 OK in 792ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/issues/list" for 127.0.0.1 at 2013-10-31 10:05:50 +0200
+Processing by IssuesController#list as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I9XaabaCIrs7/KxkgLAto0SzjzSBFS0sFtoiB9Ebbfg=", "issue"=>{"user"=>"AnnaKotova", "repo"=>"app"}, "commit"=>"Show issues list"}
+  Rendered issues/_add_issue_form.html.erb (0.9ms)
+  Rendered issues/_search_issue_form.html.erb (2.5ms)
+  Rendered issues/list.js.erb (4.9ms)
+Completed 200 OK in 1059ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 10:06:15 +0200
+Processing by IssuesController#index as HTML
+  Rendered issues/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 11ms (Views: 5.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 10:06:15 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/issues.css?body=1" for 127.0.0.1 at 2013-10-31 10:06:15 +0200
+Served asset /issues.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 10:06:15 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 10:06:15 +0200
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/issues.js?body=1" for 127.0.0.1 at 2013-10-31 10:06:15 +0200
+Served asset /issues.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 10:06:15 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/issues/list" for 127.0.0.1 at 2013-10-31 10:06:19 +0200
+Processing by IssuesController#list as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I9XaabaCIrs7/KxkgLAto0SzjzSBFS0sFtoiB9Ebbfg=", "issue"=>{"user"=>"peter-murach", "repo"=>"github"}, "commit"=>"Show issues list"}
+  Rendered issues/_add_issue_form.html.erb (1.6ms)
+  Rendered issues/_search_issue_form.html.erb (3.4ms)
+  Rendered issues/list.js.erb (5.2ms)
+Completed 200 OK in 1108ms (Views: 7.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 10:07:38 +0200
+Processing by IssuesController#index as HTML
+  Rendered issues/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 12ms (Views: 5.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 10:07:38 +0200
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 10:07:38 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/issues.css?body=1" for 127.0.0.1 at 2013-10-31 10:07:38 +0200
+Served asset /issues.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 10:07:38 +0200
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 10:07:38 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/issues.js?body=1" for 127.0.0.1 at 2013-10-31 10:07:38 +0200
+Served asset /issues.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 10:07:41 +0200
+Processing by IssuesController#index as HTML
+  Rendered issues/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 10:07:41 +0200
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/issues.css?body=1" for 127.0.0.1 at 2013-10-31 10:07:41 +0200
+Served asset /issues.css - 200 OK (4ms)
+
+
+Started GET "/assets/issues.js?body=1" for 127.0.0.1 at 2013-10-31 10:07:41 +0200
+Served asset /issues.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 10:07:41 +0200
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 10:07:41 +0200
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 10:07:41 +0200
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started POST "/issues/list" for 127.0.0.1 at 2013-10-31 10:07:46 +0200
+Processing by IssuesController#list as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I9XaabaCIrs7/KxkgLAto0SzjzSBFS0sFtoiB9Ebbfg=", "issue"=>{"user"=>"peter-murach", "repo"=>"github"}, "commit"=>"Show issues list"}
+  Rendered issues/_add_issue_form.html.erb (1.6ms)
+  Rendered issues/_search_issue_form.html.erb (3.5ms)
+  Rendered issues/list.js.erb (6.2ms)
+Completed 200 OK in 958ms (Views: 8.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-31 16:18:34 +0200
+Processing by IssuesController#index as HTML
+  Rendered issues/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 185ms (Views: 177.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-31 16:18:34 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-31 16:18:34 +0200
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/issues.css?body=1" for 127.0.0.1 at 2013-10-31 16:18:34 +0200
+Served asset /issues.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-31 16:18:34 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/issues.js?body=1" for 127.0.0.1 at 2013-10-31 16:18:34 +0200
+Served asset /issues.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-31 16:18:34 +0200
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml

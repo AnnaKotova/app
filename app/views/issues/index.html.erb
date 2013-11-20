@@ -2,10 +2,10 @@
 <%= form_for(@issue, url: {action: "list"},:remote => true, :html => {:id => 'enter_data'}) do |f| %>
     <div id = "error_block" class = "error"></div>
 <br />
-	<%= f.label :user, "Enter user name:" %><br />
+	<%= f.label :user, "Enter user name*:" %><br />
   	<%= f.text_field :user, id: "required_field_name" %>
 	<br /><br />
-	<%= f.label :repo, "Enter repository name:" %><br />
+	<%= f.label :repo, "Enter repository name*:" %><br />
 	<%= f.text_field :repo, id: "required_field_repo" %>
 	<br /><br />
 	<%= f.submit "Show issues list", class: "List_button" %>
